@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Мяу-Мятеж</title>
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background: linear-gradient(135deg, #7effc1, #a483ff);
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: #2d2d2d;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .cat {
-    font-size: 120px;
-    margin-bottom: 10px;
-  }
-  .title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .tagline {
-    font-size: 20px;
-    color: #333;
-  }
-</style>
+    <meta charset="UTF-8">
+    <title>Woop Woop 🚨</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background: radial-gradient(circle, #ff5e5e, #2d2d2d);
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .emoji {
+            font-size: 80px;
+            animation: flash 0.8s infinite;
+        }
+
+        .title {
+            font-size: 32px;
+            margin: 20px 0 10px;
+            text-shadow: 0 0 10px #fff;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #ffbbbb;
+            opacity: 0.8;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
-  <div class="cat">🐾😼🐾</div>
-  <div class="title">Слишком милая, чтобы слушаться</div>
-  <div class="tagline">Добро пожаловать в штаб 🐈‍⬛ Кошачьего Бунта</div>
+<div class="emoji">🚓🚨🚓</div>
+<div class="title">Woop woop, it's the sound of the police</div>
+<div class="subtitle">You have been caught being **too cool** on the internet 😎</div>
 </body>
 </html>
