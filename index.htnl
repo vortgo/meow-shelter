@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мяу-Мятеж</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: linear-gradient(135deg, #7effc1, #a483ff);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #2d2d2d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cat {
+    font-size: 120px;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .tagline {
+    font-size: 20px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <div class="cat">🐾😼🐾</div>
+  <div class="title">Слишком милая, чтобы слушаться</div>
+  <div class="tagline">Добро пожаловать в штаб 🐈‍⬛ Кошачьего Бунта</div>
+</body>
+</html>
