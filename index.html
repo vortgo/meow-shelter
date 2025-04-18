@@ -6,8 +6,10 @@
     <style>
         html, body {
             margin: 0;
+            padding: 0;
             height: 100%;
-            background: radial-gradient(circle, #ff5e5e, #2d2d2d);
+            width: 100%;
+            background: radial-gradient(circle at center, #ff5e5e, #2d2d2d);
             color: #fff;
             font-family: 'Courier New', monospace;
             display: flex;
@@ -27,6 +29,7 @@
             font-size: 32px;
             margin: 20px 0 10px;
             text-shadow: 0 0 10px #fff;
+            white-space: nowrap;
         }
 
         .subtitle {
@@ -43,8 +46,8 @@
     </style>
 </head>
 <body>
-<div class="emoji">🚓🚨🚓</div>
+<div class="emoji">🚓 🚨 🚓</div>
 <div class="title">Woop woop, it's the sound of the police</div>
-<div class="subtitle">You have been caught being **too cool** on the internet 😎</div>
+<div class="subtitle">You have been caught being <strong>too cool</strong> on the internet 😎</div>
 </body>
 </html>
