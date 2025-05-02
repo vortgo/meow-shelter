@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контент перегружен</title>
     <style>
         html, body {
@@ -10,25 +11,51 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
             background: linear-gradient(135deg, #d4fc79, #96e6a1);
             color: #333;
             text-align: center;
         }
-        .emoji {
-            font-size: 100px;
-            margin-bottom: 20px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
-        .title {
-            font-size: 36px;
-            font-weight: bold;
+
+        .image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .emoji {
+            font-size: 80px;
             margin-bottom: 10px;
         }
-        .subtitle {
-            font-size: 20px;
-            opacity: 0.8;
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
         }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
         .noise {
             font-family: monospace;
             font-size: 12px;
@@ -37,12 +64,21 @@
             bottom: 10px;
             left: 10px;
         }
+
+        @media (max-width: 600px) {
+            .title { font-size: 22px; }
+            .subtitle { font-size: 16px; }
+            .footer { font-size: 20px; }
+        }
     </style>
 </head>
 <body>
-<div class="emoji">📵🧠📴</div>
-<div class="title">Балерина капучино </div>
-<div class="subtitle" />мьюорина зифанчанская</div>
-<div class="noise">[ Ctrl+C — отключение потока данных... ]</div>
+    <div class="content">
+        <img class="image" src="https://via.placeholder.com/800x400" alt="Адаптивное изображение">
+    </div>
+    <div class="footer">
+на сегодня контента достаточно
+    </div>
+    <div class="noise">беременные фурри топ, кто не согласен тому в лоб 🤣🤣❤️</div>
 </body>
 </html>
