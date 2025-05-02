@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Презентация</title>
   <style>
-    :root {
-      --accent-color: #4b6cb7;
-      --bg-color: #f9f9f9;
-      --text-color: #333;
-      --font: 'Segoe UI', sans-serif;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -19,70 +12,68 @@
     }
 
     body {
-      font-family: var(--font);
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+      color: #333;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
 
     .image-section {
-      position: relative;
       height: 50vh;
-      width: 100%;
-      background: url('https://picsum.photos/1600/900?grayscale') center center / cover no-repeat;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAEklEQVR42mP8/5+hHgAHggJ/P/F2FwAAAABJRU5ErkJggg==') center center / cover no-repeat;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
 
     .image-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      bottom: 10px;
+      left: 20px;
       color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      border-radius: 8px;
     }
 
     .text-section {
-      padding: 2rem 1rem;
+      padding: 40px 20px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      justify-content: center;
-      align-items: center;
+    }
+
+    .text-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     .text-section p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      line-height: 1.6;
-      background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      font-size: 1.2rem;
+      color: #666;
     }
 
-    .text-section p:hover {
-      transform: scale(1.02);
+    @media (max-width: 768px) {
+      .text-section h1 {
+        font-size: 2rem;
+      }
+
+      .text-section p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <div class="image-section">
     <div class="image-overlay">Добро пожаловать!</div>
   </div>
+
   <div class="text-section">
-    <p>Это первая строка презентационного текста, которая делает страницу стильной и запоминающейся.</p>
-    <p>А это вторая строка — она поддерживает интерес и направляет взгляд вниз к содержимому.</p>
+    <h1>Это наша презентационная страница</h1>
+    <p>Здесь вы найдете всё, что нужно, чтобы начать.</p>
   </div>
+
 </body>
 </html>
